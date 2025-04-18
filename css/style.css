@@ -141,6 +141,10 @@ section:first-of-type{
     z-index: 10;
   }
 
+  @media (width >= 1920px){
+    background-color: aqua;
+  }
+
 }
 
 section:last-of-type{
