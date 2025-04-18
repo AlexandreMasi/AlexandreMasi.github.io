@@ -120,6 +120,8 @@ section {
   padding-bottom: 2rem;
   @media (width >= 1200px) {
     margin: inherit 3rem;
+    color: #11a6ac;
+
   }
 }
 
