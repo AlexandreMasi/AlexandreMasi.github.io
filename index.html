@@ -143,7 +143,7 @@
           back-end ou fullstack, avec une préférence pour le back-end. J’aime
           concevoir des systèmes solides et logiques, en particulier avec PHP et
           le framework Laravel. Je maîtrise aussi HTML, CSS/SASS et JavaScript
-          pour assurer une bonne cohérence entre le fond et la forme.
+          pour assurer une bonne cohérence entre le font-end et le back-end.
         </p>
         <p>
           Ancien sportif, j’applique au quotidien les valeurs de rigueur,
@@ -151,14 +151,16 @@
           occasion de progresser et de créer quelque chose de concret.
         </p>
       </section>
-      <section>
+      <section id="app">
         <h3>Projets</h3>
         <article>
           <h4>NOVA</h4>
           <!-- <a href="https://projet-web2-e2.cpsw-fcsei.com/">
             <img src="img/nova.png" alt="Nova image cover" />
           </a> -->
-            <img src="img/nova.png" alt="Nova image cover" />
+            <!-- <img src="img/nova.png" alt="Nova image"  class="image-initiale"/> -->
+             <img @mouseenter="isHovered = true"  @mouseleave="isHovered = false" :src="isHovered ? 'gif/nova.gif' : 'img/nova.png'" alt="Nova" >
+            
           <p>
             Site Web pour un festival fictif de type Arts & Musiques. Navigation
             simple. Plusieurs pages dont l'accueil, l'horaire et des articles.
@@ -179,7 +181,7 @@
           <!-- <a href="#">
             <img src="img/pubg6.png" alt="Pub G6 image" />
           </a> -->
-            <img src="img/pubg6.png" alt="Pub G6 image" />
+          <img @mouseenter="isHovered = true"  @mouseleave="isHovered = false" :src="isHovered ? 'gif/pubg6.gif' : 'img/pubg6.png'" alt="PubG6" >
           <p>
             Site Web du restaurant fictif Pub G6. Navigation simple et efficace.
             Un menu dynamique et une section pour les administrateurs afin
@@ -252,5 +254,6 @@
     <footer>
       <p id="copyright">&copy; Alexandre Masi - 2025</p>
     </footer>
+    <script src="js/app.js" type="module"></script>
   </body>
 </html>
